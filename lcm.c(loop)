@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+#include <stdio.h>
+
+int main() {
+
+    int a, b, max;
+
+    // Read two integers
+
+    scanf("%d %d", &a, &b);
+
+    // Start checking from the maximum of a and b
+
+    max = (a > b) ? a : b;
+
+    // Find the LCM
+
+    while (1) {
+
+        if (max % a == 0 && max % b == 0) {
+
+            printf("%d\n", max);
+
+            break;
+
+        }
+
+        max++;
+
+    }
+
+    return 0;
+
+}
