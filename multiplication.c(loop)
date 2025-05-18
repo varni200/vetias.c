@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+
+    int multiplicant, n;
+
+    // Read two integers: multiplicant and number
+
+    scanf("%d %d", &multiplicant, &n);
+
+    // Print multiplication table line by line
+
+    for (int i = 1; i <= multiplicant; i++) {
+
+        printf("%d * %d = %d\n", i, n, i * n);
+
+    }
+
+    return 0;
+
+}
